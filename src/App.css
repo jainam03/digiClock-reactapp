@@ -1,37 +1,25 @@
 .App {
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem; */
-
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6rem;
-
-  /* background-color: rgb(76, 80, 95); */
   background-image: linear-gradient(to bottom, rgb(99, 128, 217), rgb(73, 73, 200) 80%);
   color: #FFF;
-
   transition: 0.4s;
-
   user-select: none;
 }
 
-@media (max-width: 755px) {
+@media (max-width: 768px) {
   .App {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+      gap: 3rem;
+  }
+}
 
-    display: flex;
-    justify-self: unset;
-  }  
+@media (max-width: 545px) {
+  .App {
+      gap: 2rem;
+  }
 }

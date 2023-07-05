@@ -1,11 +1,9 @@
 .main-component {
     width: 100vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     transition: 0.4s;
 }
 
@@ -13,22 +11,28 @@
     font-size: 6.4rem;
     font-weight: bold;
     letter-spacing: 1rem;
-
     padding: 4rem 6rem;
-
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 1rem;
-
     background: linear-gradient(to top, rgba(255,255,255,0.2) 20%, rgba(255,255,255,0.5) 90%);
-    backdrop-filter: blue(15px);
+    backdrop-filter: blur(15px);
 }
 
 .main-component .time p {
-    /* background-image: linear-gradient(to left, #EC4899 10%,#8B5Cf6 60%); */
-    
-    /* -webkit-background-clip: text;
-    background-clip: text ;
-    -webkit-text-fill-color: transparent; */
     color: #111;
     opacity: .75;
+}
+
+@media (max-width: 768px) {
+    .main-component .time {
+        font-size: 4rem;
+        padding: 2rem 3rem;
+    }
+}
+
+@media (max-width: 545px) {
+    .main-component .time {
+        font-size: 3rem;
+        padding: 1.5rem 2rem;
+    }
 }
